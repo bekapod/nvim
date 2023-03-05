@@ -412,10 +412,18 @@ end
 local servers = {
   -- clangd = {},
   -- gopls = {},
-  -- pyright = {},
-  -- rust_analyzer = {},
-  -- tsserver = {},
-
+  cssls = {},
+  eslint = {},
+  html = {},
+  jsonls = {},
+  prismals = {},
+  pyright = {},
+  rust_analyzer = {},
+  stylelint_lsp = {},
+  tailwindcss = {},
+  tsserver = {},
+  volar = {},
+  yamlls = {},
   lua_ls = {
     Lua = {
       workspace = { checkThirdParty = false },
