@@ -23,3 +23,4 @@ vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 
 vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
 
+vim.keymap.set("n", "<leader>t", vim.cmd.Neotree)
