@@ -238,8 +238,6 @@ vim.o.completeopt = 'menuone,noselect'
 -- NOTE: You should make sure your terminal supports this
 vim.o.termguicolors = true
 
-require('custom.set')
-
 -- [[ Basic Keymaps ]]
 
 -- Keymaps for better default experience
@@ -249,8 +247,6 @@ vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 -- Remap for dealing with word wrap
 vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
 vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
-
-require('custom.keymap')
 
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
