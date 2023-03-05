@@ -465,6 +465,18 @@ mason_lspconfig.setup_handlers {
   end,
 }
 
+local mason_null_ls = require 'mason-null-ls'
+
+mason_null_ls.setup {
+  ensure_installed = { "prettierd", "ruff", "actionlint" },
+  automatic_setup = true,
+}
+
+require('null-ls').setup()
+
+mason_null_ls.setup_handlers()
+
+
 -- nvim-cmp setup
 local cmp = require 'cmp'
 local luasnip = require 'luasnip'
